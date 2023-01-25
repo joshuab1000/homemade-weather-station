@@ -15,4 +15,4 @@ def read_all():
     ambient_temperature = bme280_data.temperature
     return(humidity, pressure, ambient_temperature)
 
-#print(read_all())
+print(read_all())
