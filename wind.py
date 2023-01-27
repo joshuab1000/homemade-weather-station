@@ -10,6 +10,7 @@ CIRCUMFERENCE_CM = (2 * math.pi) * RADIUS_CM
 ADJUSTMENT = 1.18 # Compensate for "anemometer factor"
 CM_PER_S_TO_KM_PER_HOUR = .036
 
+wind_count = 0
 store_speeds = []
 
 def spin():
