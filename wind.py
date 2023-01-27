@@ -46,4 +46,3 @@ while True:
     wind_gust = max(store_speeds) # Wind gust top speed
     wind_speed = statistics.mean(store_speeds)
     print(wind_speed, wind_gust)
-
