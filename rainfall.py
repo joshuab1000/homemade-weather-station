@@ -13,6 +13,3 @@ def bucket_tipped():
 def reset_rainfall():
     global count
     count = 0
-
-while True:
-    rain_sensor.when_pressed = bucket_tipped

@@ -46,16 +46,11 @@ def get_average(angles):
 
 def get_value(length=5):
     data = []
-    print("Measuring wind direction for %d seconds..." % length)
     start_time = time.time()
 
     while time.time() - start_time <= length:
         wind =round(adc.value*3.3,1)
-        if not wind in volts: # keep only good measurements
-            print('unknown value ' + str(wind))
-        else:
-            data.append(volts[wind])
+        if wind in volts: # keep only good measurements
+           data.append(volts[wind])
 
     return get_average(data)
-
-print(get_value(0.01))

@@ -14,5 +14,3 @@ def read_all():
     pressure  = bme280_data.pressure
     ambient_temperature = bme280_data.temperature
     return(humidity, pressure, ambient_temperature)
-
-print(read_all())
